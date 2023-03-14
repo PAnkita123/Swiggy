@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #home {
+            height: 550px;
+            width: 100%;
+            /* border:1px solid black; */
+            display: flex;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #home>div:nth-child(1) {
+            height: 550px;
+            width: 55%;
+            /* border:1px solid black; */
+
+        }
+
+        #home>div:nth-child(2) {
+            height: 550px;
+            width: 45%;
+            /* border:1px solid black; */
+            overflow: hidden;
+
+        }
+
+        #home>div:nth-child(2)>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #left-side {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        #left-side>div:nth-child(1) {
+            height: 100px;
+            width: 75%;
+            /* border:1px solid black; */
+            margin-top: 100px;
+            margin-left: 140px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left-side>div:nth-child(2) {
+            height: 120px;
+            width: 75%;
+            /* border:1px solid black; */
+            margin-left: 140px;
+        }
+
+        #left-side>div:nth-child(2)>h1 {
+            font-size: 120;
+
+        }
+
+        #left-side>div:nth-child(2)>p {
+            font-size: 23px;
+            opacity: 0.6;
+            margin-top: 10px;
+
+        }
+
+        #left-side>div:nth-child(3) {
+            height: 60px;
+            width: 75%;
+            border: 1px solid #fc8019;
+            margin-left: 140px;
+        }
+
+        #left-side>div:nth-child(3)>input {
+            height: 60px;
+            width: 80%;
+            border: none;
+
+        }
+
+        input::placeholder {
+            font-weight: bold;
+            opacity: 0.9;
+            font-size: 15px;
+            padding-left: 20px;
+
+        }
+
+        /* #left-side>div:nth-child(3)>input:hover{
+        border:1px solid #fc8019;
+        } */
+
+        #left-side>div:nth-child(3)>button {
+            height: 60px;
+            width: 20%;
+            border: none;
+            color: white;
+            font-weight: bold;
+            background-color: #fc8019;
+            float: right;
+
+        }
+
+        #left-side>div:nth-child(4) {
+            height: 100px;
+            width: 75%;
+            /* border:1px solid black; */
+            margin-left: 140px;
+            line-height: 25px;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+
+        #left-side>div:nth-child(4)>p {
+            opacity: 0.6;
+            font-weight: bold;
+        }
+
+        #left-side1>div {
+            height: 100px;
+            width: 30%;
+            /* border:1px solid black; */
+
+        }
+
+        #left-side1>div:nth-child(1)>img {
+            height: 60px;
+            width: 100%;
+
+        }
+
+        #signup {
+            height: 40px;
+            width: 120px;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+
+
+        }
+
+        #login {
+            border: none;
+            font-weight: bold;
+            background-color: white;
+            height: 40px;
+            width: 60px;
+        }
+
+        #home-2 {
+            height: 300px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            background-color: #2b1e16;
+            justify-content: space-around;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        #home-2>div {
+            height: 300px;
+            width: 20%;
+            /* border:1px solid white; */
+            color: white;
+        }
+
+        #home-2>div>img {
+            height: 170px;
+            width: 40%;
+            margin-top: 10px;
+            margin-left: 70px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            line-height: 40px;
+        }
+        #login-page {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#signup-page {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"]
+ {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height:30px;
+}
+
+#submit{background-color: #fc8019;
+    color:white;
+    height:30px;
+
+}
+
+a {
+    text-decoration: none;
+    color:rgb(209, 11, 77);
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <div id="left-side">
+            <div id="left-side1">
+                <div><img src="./images/Swiggy_logo.svg.png" /></div>
+                <div><button id="login">Login</button>
+                    <div id="login-page" class="hidden">
+                        <form>
+                            <a id="close" href="#">×</a>
+                            <h1>Login</h1>
+                            <small>or</small> <a href="./login.html">create an account</a>
+                          <label for="username">Username:</label>
+                          <input type="text" id="username">
+                          <label for="password">Password:</label>
+                          <input type="password" id="password">
+                          <input id="submit" type="submit" value="Login">
+                        </form>
+                      </div>
+                    <button id="signup">Sign up</button>
+                    <div id="signup-page" class="hidden">
+                        <form>
+                            <a id="close2" href="#">×</a>
+                            <h1>Sign up</h1>
+                            <small>or</small> <a href="./login.html">create an account</a>
+                          <label for="username">Username</label>
+                          <input type="text" id="username">
+                          <label for="email">Email Id</label>
+                          <input type="email" id="userEmail">
+                          <label for="password">Password</label>
+                          <input type="password" id="password">
+                          <input id="submit" type="submit" value="Sign up">
+                        </form>
+                      </div>
+                </div>
+            </div>
+            <div>
+                <h1>Cooking gone wrong?</h1>
+                <p>Order food from favourite restaurants near you.</p>
+            </div>
+            <div>
+                <input placeholder="Enter your delivery location">
+                <button>Find Food</button>
+            </div>
+            <div>
+                <p>POPULAR CITIES IN INDIA</p>
+                <p>Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune & more.</p>
+            </div>
+        </div>
+        <div><img src="./images/home-1.png" /></div>
+    </div>
+    <div id="home-2">
+        <div><img src="./images/home-2.webp" />
+            <h3>No Minimum Order</h3>
+            <p>Order in for yourself or for the group, with no restrictions on order value
+            </p>
+        </div>
+        <div><img src="./images/home-3.webp" />
+            <h3>Live Order Tracking</h3>
+            <p>Know where your order is at all times, from the restaurant to your doorstep
+            </p>
+        </div>
+        <div><img src="./images/home-4.webp" />
+            <h3>Lightning-Fast Delivery
+            </h3>
+            <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
